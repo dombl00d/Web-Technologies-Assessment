@@ -1,2 +1,126 @@
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
-<script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+body {
+    background-color: #bce3fa;
+    color: #28225c;
+    font-family: Aptos, Arial, sans-serif;
+    margin: 0;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1,
+h2 {
+    background-color: #0abaee;
+    color: #28225c;
+    border: 2px solid #28225c;
+    border-radius: 12px;
+    padding: 10px 15px;
+    font-family: Aptos, Arial, sans-serif;
+}
+
+p {
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #28225c;
+    border-radius: 12px;
+    display: block;
+}
+
+figure {
+    margin: 20px 0;
+}
+
+figcaption {
+    margin-top: 8px;
+    font-style: italic;
+}
+
+a {
+    color: #003d7a;
+}
+
+a:hover {
+    color: #005bb5;
+}
+
+@media (max-width: 600px) {
+
+    main {
+        padding: 15px;
+    }
+
+    h1,
+    h2 {
+        padding: 8px 12px;
+    }
+
+}
+
+form {
+    margin-top: 20px;
+}
+
+fieldset {
+    border: 2px solid #28225c;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #d9effd;
+}
+
+legend {
+    font-weight: bold;
+    color: #28225c;
+    padding: 0 8px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #28225c;
+    border-radius: 8px;
+    font-family: Aptos, Arial, sans-serif;
+    color: #28225c;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #0abaee;
+    color: #28225c;
+    border: 2px solid #28225c;
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-family: Aptos, Arial, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+input[type="submit"\]:hover,
+input[type="reset"\]:hover {
+    background-color: #87dffd;
+}
