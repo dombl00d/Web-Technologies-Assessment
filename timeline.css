@@ -44,3 +44,17 @@
 .alt-card {
     max-width: 350px;
 }
+
+.alt-card {
+    width: 100%;
+    max-width: 420px;
+
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.alt-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
