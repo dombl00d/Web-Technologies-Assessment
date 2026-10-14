@@ -27,5 +27,4 @@ input[type="text"]:focus {
     height: 32px;
     width: auto;
     margin-right: 10px;
-    border: 2px solid red;
 }
