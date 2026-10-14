@@ -22,3 +22,11 @@ body {
 input[type="text"]:focus {
     border-color: var(--secondary-colour);
 }
+
+.navbar-logo {
+    heigh: auto;
+    width: auto:
+    margin-right: 10px;
+}
+
+}
