@@ -1,0 +1,44 @@
+.alt-timeline {
+    position: relative;
+}
+
+.alt-timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #e5e7eb;
+}
+
+.alt-item {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: calc(50% + 20px);
+    margin-bottom: 24px;
+}
+
+.alt-item.right {
+    justify-content: flex-start;
+    padding-right: 0;
+    padding-left: calc(50% + 20px);
+}
+
+.alt-dot {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #003366;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 0 2px #003366;
+    top: 12px;
+}
+
+.alt-card {
+    max-width: 350px;
+}
