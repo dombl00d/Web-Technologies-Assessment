@@ -1,116 +1,24 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root {
+    --primary-colour: #003366;
+    --secondary-colour: #00a3e0;
 }
 
-/* Body */
 body {
-    font-family: "Segoe UI", Arial, sans-serif;
     background-color: #f8f9fa;
-    color: #333;
-    line-height: 1.6;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
 }
 
-/* Header */
-header {
-    background: #fff;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    margin-bottom: 20px;
+.navbar {
+    background-color: var(--primary-colour) !important;
 }
 
-header h1 {
-    color: #0078d4;
-    margin-bottom: 10px;
+.nav-link:hover {
+    color: #ffffff;
 }
 
-/* Navigation */
-nav {
-    margin-top: 15px;
+#results {
+    min-height: 150px;
 }
 
-nav a {
-    text-decoration: none;
-    color: #555;
-    margin-right: 20px;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: #0078d4;
-}
-
-/* Main Sections */
-section {
-    background: white;
-    padding: 25px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-}
-
-/* Headings */
-h1, h2, h3 {
-    margin-bottom: 15px;
-    color: #222;
-}
-
-/* Paragraphs */
-p {
-    margin-bottom: 15px;
-}
-
-/* Images */
-img {
-    max-width: 100%;
-    border-radius: 8px;
-}
-
-/* Buttons */
-button,
-.btn {
-    background: #0078d4;
-    color: white;
-    border: none;
-    padding: 10px 18px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-button:hover,
-.btn:hover {
-    background: #106ebe;
-}
-
-/* Forms */
-input,
-textarea,
-select {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-}
-
-input:focus,
-textarea:focus {
-    outline: none;
-    border-color: #0078d4;
-}
-
-/* Footer */
-footer {
-    text-align: centre;
-    padding: 20px;
-    color: #777;
+input[type="text"]:focus {
+    border-color: var(--secondary-colour);
 }
