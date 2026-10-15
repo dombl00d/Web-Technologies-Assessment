@@ -123,6 +123,7 @@
                     <input type="text"
                            class="form-control"
                            id="projectName"
+                           placeholder="Please provide your project title."
                            required>
                 </div>
 
@@ -144,18 +145,24 @@
                         Architecture Style
                     </label>
 
-                    <select class="form-select" id="architectureType">
+                    <select class="form-select" id="architectureType" required>
+                        <option value="">Select></option>
                         <option>Monolithic</option>
                         <option>Microservices</option>
                         <option>Event Driven</option>
                         <option>Serverless</option>
                     </select>
                 </div>
-
-                <button type="submit" class="btn btn-success">
+                <div class="d-flex gap-2">
+                    <button type="submit"
+                        class="btn btn-success">
                     Generate Recommendation
-                </button>
+                    </button>
 
+                    <button type="rest"
+                        class="btn btn-outline-secondary">
+                        Reset Form
+                    </button>
             </form>
 
         </section>
