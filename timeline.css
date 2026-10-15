@@ -96,3 +96,7 @@
 .timeline-badge-publication {
     background-color: #fd7e14;
 }
+
+html {
+    scroll-behaviour: smooth;
+}
