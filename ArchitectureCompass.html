@@ -194,28 +194,36 @@
                 Search for architecture-related repositories using the GitHub API.
             </p>
 
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="d-flex gap-2">
-                        <button id="searchButton"
-                            class="btn btn-primary flex-grow-1">
-                            Search GitHub
-                        </button>
-                        <button id="resetApiButton"
-                            class="btn btn-outline-secondary">
-                            Reset
-                        </button>
-                    </div>
-                </div>
+<div class="row g-2">
 
-                <div class="mt-4"
-                    id="apiResults">
-                    <div class="card">
-                        <div class="card-body">
-                        Enter a search term to retrieve architecture resources.
-                    </div>
-                </div>
+    <div class="col-md-8">
 
+        <input type="text"
+               id="apiSearch"
+               class="form-control"
+               placeholder="Search e.g. TOGAF, ArchiMate, Enterprise Architecture">
+
+    </div>
+
+    <div class="col-md-4">
+
+        <div class="d-flex gap-2">
+
+            <button id="searchButton"
+                    class="btn btn-primary flex-grow-1">
+                Search GitHub
+            </button>
+
+            <button id="resetApiButton"
+                    class="btn btn-outline-secondary">
+                Reset
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
         </section>
 
         <!-- About -->
