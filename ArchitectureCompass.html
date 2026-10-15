@@ -196,16 +196,16 @@
 
             <div class="row">
                 <div class="col-md-8">
-                    <input type="text"
-                        id="apiSearch"
-                        class="form-control"
-                        placeholder="Search e.g. TOGAF, ArchiMate, Enterprise Architecture">
-                </div>
-                <div class="col-md-4">
-                    <button id="searchButton"
-                        class="btn btn-primary w-100">
-                        Search GitHub
-                    </button>
+                    <div class="d-flex gap-2">
+                        <button id="searchButton"
+                            class="btn btn-primary flex-grow-1">
+                            Search GitHub
+                        </button>
+                        <button id="resetApiButton"
+                            class="btn btn-outline-secondary">
+                            Reset
+                        </button>
+                    </div>
                 </div>
 
                 <div class="mt-4"
@@ -411,6 +411,25 @@ document.getElementById("searchButton")
 
     document.getElementById("apiResults").innerHTML =
         resultsHtml;
+
+});
+
+document.getElementById("resetApiButton")
+.addEventListener("click", function() {
+
+    document.getElementById("apiSearch").value = "";
+
+    document.getElementById("apiResults").innerHTML = `
+
+        <div class="card">
+
+            <div class="card-body">
+                Enter a search term to retrieve architecture resources.
+            </div>
+
+        </div>
+
+    `;
 
 });
 
