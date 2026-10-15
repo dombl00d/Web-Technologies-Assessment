@@ -132,7 +132,7 @@
                         Project Size
                     </label>
 
-                    <select class="form-select" id="projectSize">
+                    <select class="form-select" id="projectSize" required>
                         <option value="">Select</option>
                         <option>Small</option>
                         <option>Medium</option>
@@ -284,7 +284,7 @@ document.getElementById("architectureForm")
 
     }
 
-    document.getElementById("results").innerHTML = 
+    document.getElementById("results").innerHTML = `
 
         <div class="card shadow">
 
@@ -311,14 +311,14 @@ document.getElementById("architectureForm")
 
         </div>
 
-    ;
+    `;
 
 });
 
 document.getElementById("architectureForm")
 .addEventListener("reset", function() {
 
-    document.getElementById("results").innerHTML = 
+    document.getElementById("results").innerHTML = `
 
         <div class="card">
 
@@ -328,15 +328,11 @@ document.getElementById("architectureForm")
 
         </div>
 
-    ;
+    `;
 
 });
-``
-
+    
 </script>
-
-</body>
-</html>
 
 </body>
 </html>
