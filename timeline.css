@@ -19,13 +19,21 @@
     display: flex;
     justify-content: flex-end;
     padding-right: calc(50% + 20px);
-    margin-bottom: 24px;
+    margin-bottom: 60px;
 }
 
 .alt-item.right {
     justify-content: flex-start;
     padding-right: 0;
     padding-left: calc(50% + 20px);
+}
+
+/* Centred achievement cards */
+
+.alt-item.milestone {
+    justify-content: center;
+    padding-right: 0;
+    padding-left: 0;
 }
 
 .alt-dot {
@@ -47,5 +55,44 @@
 
     opacity: 0;
     transform: translateY(150px);
-    transition: all 2s ease;
+    transition: all 1.2s ease;
+}
+
+.alt-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Professional Experience */
+
+.experience-card {
+    border-left: 5px solid #003366 !important;
+}
+
+/* Qualifications */
+
+.education-card {
+    border-left: 5px solid #198754 !important;
+    background-color: #f8fff9;
+}
+
+/* Publications */
+
+.publication-card {
+    border-left: 5px solid #fd7e14 !important;
+    background-color: #fffaf2;
+}
+
+/* Badges */
+
+.timeline-badge-professional {
+    background-color: #003366;
+}
+
+.timeline-badge-education {
+    background-color: #198754;
+}
+
+.timeline-badge-publication {
+    background-color: #fd7e14;
 }
