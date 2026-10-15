@@ -191,8 +191,30 @@
             <h2>Architecture Knowledge Hub</h2>
 
             <p>
-                Google scholar for arch papers? API into other repo's on Arch stuff? More?
+                Search for architecture-related repositories using the GitHub API.
             </p>
+
+            <div class="row">
+                <div class="col-md-8">
+                    <input type="text"
+                        id="apiSearch"
+                        class="form-control"
+                        placeholder="Search e.g. TOGAF, ArchiMate, Enterprise Architecture">
+                </div>
+                <div class="col-md-4">
+                    <button id="searchButton"
+                        class="btn btn-primary w-100">
+                        Search GitHub
+                    </button>
+                </div>
+
+                <div class="mt-4"
+                    id="apiResults">
+                    <div class="card">
+                        <div class="card-body">
+                        Enter a search term to retrieve architecture resources.
+                    </div>
+                </div>
 
         </section>
 
@@ -331,7 +353,67 @@ document.getElementById("architectureForm")
     `;
 
 });
-    
+
+document.getElementById("searchButton")
+.addEventListener("click", async function() {
+
+    const searchTerm =
+        document.getElementById("apiSearch").value;
+
+    if (!searchTerm) {
+
+        document.getElementById("apiResults").innerHTML = `
+            <div class="alert alert-warning">
+                Please enter a search term.
+            </div>
+        `;
+
+        return;
+    }
+
+    const response =
+        await fetch(
+            `https://api.github.com/search/repositories?q=${searchTerm}`
+        );
+
+    const data =
+        await response.json();
+
+    let resultsHtml = "";
+
+    data.items.slice(0, 5).forEach(repo => {
+
+        resultsHtml += `
+
+            <div class="card mb-3">
+
+                <div class="card-body">
+
+                    <h5>
+                        <a href="${repo.html_url}"
+                           target="_blank">
+
+                           ${repo.name}
+
+                        </a>
+                    </h5>
+
+                    <p>
+                        ${repo.description || "No description available."}
+                    </p>
+
+                </div>
+
+            </div>
+
+        `;
+    });
+
+    document.getElementById("apiResults").innerHTML =
+        resultsHtml;
+
+});
+
 </script>
 
 </body>
