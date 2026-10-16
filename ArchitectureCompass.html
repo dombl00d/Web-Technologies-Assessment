@@ -123,6 +123,7 @@
                     <input type="text"
                            class="form-control"
                            id="projectName"
+                           aria-label="Project Name"
                            placeholder="Please provide your project title."
                            required>
                 </div>
@@ -147,7 +148,10 @@
                         Project Size
                     </label>
 
-                    <select class="form-select" id="projectSize" required>
+                    <select class="form-select"
+                        id="projectSize"
+                        aria-label="Project Size"
+                        required>
                         <option value="">Select</option>
                         <option>Small</option>
                         <option>Medium</option>
@@ -160,7 +164,10 @@
                         Architecture Style
                     </label>
 
-                    <select class="form-select" id="architectureType" required>
+                    <select class="form-select"
+                            id="architectureType"
+                            aria-label="Architecture Style"
+                            required>
                         <option value="">Select</option>
                         <option>Monolithic</option>
                         <option>Microservices</option>
@@ -216,6 +223,7 @@
         <input type="text"
                id="apiSearch"
                class="form-control"
+               aria-label="Search GitHub architecture repositories"
                placeholder="Search e.g. TOGAF, ArchiMate, Enterprise Architecture">
 
     </div>
@@ -261,6 +269,14 @@
             <p>
                 The Architecture Compass helps technology teams identify suitable
                 architecture approaches based on project requirements. The initative was driven by the author's passion for Enterprise Architecture, and appropriated within the context of the requirements of Task 2 of the MSc Web Technologies module.
+            </p>
+
+            <h2>Accessibility</h2>
+
+            <p>
+                Architecture Compass has been designed using semantic HTML,
+                responsibe Bootstrap layouts, descriptive labels, alterantive text,
+                and keyboard-accessible controls to improve usability and accessibility.
             </p>
 
         </section>
