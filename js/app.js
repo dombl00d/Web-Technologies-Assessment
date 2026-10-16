@@ -156,6 +156,21 @@ document.getElementById("searchButton")
                         ${repo.description || "No description available."}
                     </p>
 
+                    <p>
+                        <strong>Owner:</strong>
+                        ${repo.owner.login}
+                    </p
+
+                    <p>
+                        <strong>Primary Language:</strong>
+                        ${repo.language || "Not specified"}
+                    </p>
+
+                    <p>
+                    <strong>Stars:</strong>
+                    ${repo.stargazers_count}
+                    </p>
+
                 </div>
 
             </div>
