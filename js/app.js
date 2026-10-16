@@ -3,6 +3,10 @@ document.getElementById("architectureForm")
 
     event.preventDefault();
 
+
+    const deploymentModel = 
+        document.getElementById("deploymentModel").value;
+    
     const projectName =
         document.getElementById("projectName").value;
 
@@ -68,6 +72,11 @@ document.getElementById("architectureForm")
                 <p>
                     <strong>Project Size:</strong>
                     ${projectSize}
+                </p>
+
+                <p>
+                    <strong>Deployment Model:</strong>
+                    ${deploymentModel}
                 </p>
 
                 <p>
