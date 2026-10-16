@@ -100,3 +100,13 @@
 html {
     scroll-behaviour: smooth;
 }
+
+.timeline-badge-professional,
+.timeline-badge-eduction,
+.timeline-badge-publication {
+
+    white-space: normal;
+    max-wdith: 100%;
+    display: inline-block;
+
+}
