@@ -80,6 +80,11 @@ document.getElementById("architectureForm")
                 </p>
 
                 <p>
+                    <strong>Architecture Style:</strong>
+                    &{architectureType}
+                </p>
+
+                <p>
                     ${rationale}
                 </p>
 
@@ -132,6 +137,17 @@ document.getElementById("searchButton")
 
     const data =
         await response.json();
+
+    if (data.items.length ==0) {
+        document.getElementById("apiResults").innerHTML = `
+
+            <div class="alter alert-warning">
+            No matching respositories found.
+            </div>
+        `;
+
+        return;
+    }
 
     let resultsHtml = "";
 
