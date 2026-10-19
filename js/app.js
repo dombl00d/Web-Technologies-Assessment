@@ -81,7 +81,7 @@ document.getElementById("architectureForm")
 
                 <p>
                     <strong>Architecture Style:</strong>
-                    &{architectureType}
+                    ${architectureType}
                 </p>
 
                 <p>
