@@ -1,3 +1,16 @@
+/*
+Architecture Compass
+Author: Dominic Blood (C1047841)
+
+Purpose:
+Handles:
+- Form submission,
+- Form reset,
+- Recommendation generation,
+- GitHub API search,
+- GitHub API reset
+*/
+
 document.getElementById("architectureForm")
 .addEventListener("submit", function(event) {
 
