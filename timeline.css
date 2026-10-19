@@ -1,4 +1,12 @@
-/* Timeline CSS appropriated from https://bootstrapplanet.com/components/bootstrap-5-timeline/ */
+/* Timeline CSS appropriated from:
+https://bootstrapplanet.com/components/bootstrap-5-timeline/ 
+
+Modifications:
+- Accessibility improvements,
+- Responsive badge behaviour,
+- Additional category styling,
+- Animation integration
+*/
 
 .alt-timeline {
     position: relative;
