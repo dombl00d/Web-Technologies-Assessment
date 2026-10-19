@@ -155,7 +155,7 @@ document.getElementById("searchButton")
         document.getElementById("apiResults").innerHTML = `
 
             <div class="alert alert-warning">
-            No matching respositories found.
+            No matching repositories found.
             </div>
         `;
 
