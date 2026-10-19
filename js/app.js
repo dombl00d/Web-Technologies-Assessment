@@ -141,7 +141,7 @@ document.getElementById("searchButton")
     if (data.items.length ==0) {
         document.getElementById("apiResults").innerHTML = `
 
-            <div class="alter alert-warning">
+            <div class="alert alert-warning">
             No matching respositories found.
             </div>
         `;
@@ -175,7 +175,7 @@ document.getElementById("searchButton")
                     <p>
                         <strong>Owner:</strong>
                         ${repo.owner.login}
-                    </p
+                    </p>
 
                     <p>
                         <strong>Primary Language:</strong>
