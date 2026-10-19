@@ -98,11 +98,11 @@
 }
 
 html {
-    scroll-behaviour: smooth;
+    scroll-behavior: smooth;
 }
 
 .timeline-badge-professional,
-.timeline-badge-eduction,
+.timeline-badge-education,
 .timeline-badge-publication {
 
     white-space: normal;
